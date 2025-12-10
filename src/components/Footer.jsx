@@ -4,19 +4,18 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-info">
-                        <a href="#" className="logo" style={{ marginBottom: '1rem', display: 'block' }}>
-                            <i className="fa-solid fa-snowflake"></i> KH <span>Contracting</span>
-                        </a>
-                        <p>Reliable Snow Removal & Property Maintenance in Thunder Bay, Ontario.</p>
+                        <h3>KH Contracting</h3>
+                        <p style={{ opacity: 0.8, marginBottom: '1.5rem', lineHeight: '1.8' }}>
+                            Professional snow removal and property maintenance services in Thunder Bay. Reliable, insured, and ready to help.
+                        </p>
+                        <div className="social-links" style={{ marginBottom: '2rem' }}>
+                            <a href="https://www.facebook.com/profile.php?id=61566857147759" target="_blank" rel="noreferrer" style={{ fontSize: '1.5rem', color: 'var(--secondary-color)' }}><i className="fa-brands fa-facebook"></i></a>
+                        </div>
                     </div>
 
                     <div className="footer-contact">
                         <h3>Contact Us</h3>
                         <ul className="contact-list">
-                            <li>
-                                <i className="fa-solid fa-location-dot"></i>
-                                <span>638 Brown Street,<br />Thunder Bay, ON, Canada</span>
-                            </li>
                             <li>
                                 <i className="fa-solid fa-phone"></i>
                                 <a href="tel:8076323675">(807) 632-3675</a>
@@ -25,7 +24,18 @@ const Footer = () => {
                                 <i className="fa-solid fa-envelope"></i>
                                 <a href="mailto:dupont_92@hotmail.com">dupont_92@hotmail.com</a>
                             </li>
+                            <li>
+                                <i className="fa-solid fa-location-dot"></i>
+                                <span>Thunder Bay, ON</span>
+                            </li>
                         </ul>
+
+                        <div style={{ marginTop: '2rem' }}>
+                            <h4 style={{ fontSize: '1rem', color: 'var(--accent-color)', marginBottom: '0.5rem' }}>Service Areas:</h4>
+                            <p style={{ fontSize: '0.85rem', color: 'var(--gray-200)', lineHeight: '1.5', opacity: 0.8 }}>
+                                Port Arthur • Fort William • Current River • Westfort • Northwood • Grandview
+                            </p>
+                        </div>
                     </div>
 
                     <div className="footer-hours">
