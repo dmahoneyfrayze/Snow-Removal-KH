@@ -13,7 +13,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="about-image fade-in" style={{ transitionDelay: '0.2s' }}>
-                    <img src="https://images.unsplash.com/photo-1517260739337-6799d2ccdde2?auto=format&fit=crop&q=80&w=800" alt="Snow removal truck" />
+                    <img src="/about_section.png" alt="Snow removal truck" />
                 </div>
             </div>
         </section>

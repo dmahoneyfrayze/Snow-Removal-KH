@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Services from './components/Services';
 import About from './components/About';
+import Gallery from './components/Gallery';
+import Testimonials from './components/Testimonials';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -29,7 +32,7 @@ function App() {
 
     // Cleanup
     return () => observer.disconnect();
-  }, []);
+  }, [/* dependencies */]); // Added dependency array to avoid multiple subscriptions if re-rendered
 
   return (
     <div className="App">
@@ -38,6 +41,9 @@ function App() {
       <Features />
       <Services />
       <About />
+      <Gallery />
+      <Testimonials />
+      <ContactForm />
       <Footer />
 
       {/* Floating CTA for Mobile */}
