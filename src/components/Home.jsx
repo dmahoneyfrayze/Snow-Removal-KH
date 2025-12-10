@@ -6,6 +6,7 @@ import Gallery from './Gallery';
 import Testimonials from './Testimonials';
 import ContactForm from './ContactForm';
 import FAQ from './FAQ';
+import SeasonCalculator from './SeasonCalculator';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -30,6 +31,18 @@ const Home = () => {
             </section>
 
             <Features />
+
+            {/* Lead Magnet Calculator */}
+            <section className="calculator-section section-padding" style={{ background: 'var(--gray-100)' }}>
+                <div className="container">
+                    <div className="section-header text-center">
+                        <span>Compare & Save</span>
+                        <h2>Calculate Your Savings</h2>
+                    </div>
+                    <SeasonCalculator />
+                </div>
+            </section>
+
             <Services />
             <About />
             <Gallery />
