@@ -26,8 +26,8 @@ const Header = () => {
                 <nav>
                     <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                         <li><a href="/" onClick={closeMenu}>Home</a></li>
-                        <li><a href="/#services" onClick={closeMenu}>Services</a></li>
-                        <li><a href="/#about" onClick={closeMenu}>About</a></li>
+                        <li><a href="/services" onClick={closeMenu}>Services</a></li>
+                        <li><a href="/contact" onClick={closeMenu}>Contact</a></li>
                         <li><a href="tel:8076323675" className="btn btn-primary" onClick={closeMenu}>Call (807) 632-3675</a></li>
                     </ul>
                 </nav>
