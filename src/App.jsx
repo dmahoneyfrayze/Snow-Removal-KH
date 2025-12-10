@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
+import ReferralPage from './components/ReferralPage';
+import ResidentialSnow from './components/ResidentialSnow';
+import CommercialSnow from './components/CommercialSnow';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import CareersPage from './components/CareersPage';
@@ -52,6 +55,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/referrals" element={<ReferralPage />} />
+          <Route path="/residential-snow-removal" element={<ResidentialSnow />} />
+          <Route path="/commercial-snow-removal" element={<CommercialSnow />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/quote" element={<ContactPage />} />

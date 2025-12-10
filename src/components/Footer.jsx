@@ -13,6 +13,7 @@ const Footer = () => {
                         </div>
                         <p style={{ fontSize: '0.9rem' }}>
                             <a href="/careers" style={{ marginRight: '1rem', textDecoration: 'underline' }}>Careers</a>
+                            <a href="/referrals" style={{ marginRight: '1rem', textDecoration: 'underline' }}>Referral Program</a>
                             <a href="/blog" style={{ textDecoration: 'underline' }}>Blog</a>
                         </p>
                     </div>
