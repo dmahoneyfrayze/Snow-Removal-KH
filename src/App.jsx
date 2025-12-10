@@ -1,17 +1,14 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Services from './components/Services';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
-import ContactForm from './components/ContactForm';
+import Home from './components/Home';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 
 function App() {
 
-  // Intersection Observer for fade-in animations
+  // Intersection Observer for fade-in animations on route change
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -27,30 +24,41 @@ function App() {
       });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.fade-in');
-    animatedElements.forEach(el => observer.observe(el));
+    // Observe function we can call periodically or on mutation
+    const observeElements = () => {
+      const animatedElements = document.querySelectorAll('.fade-in');
+      animatedElements.forEach(el => observer.observe(el));
+    };
 
-    // Cleanup
-    return () => observer.disconnect();
-  }, [/* dependencies */]); // Added dependency array to avoid multiple subscriptions if re-rendered
+    observeElements();
+
+    // Use MutationObserver to watch for DOM changes (like route transitions)
+    const mutationObserver = new MutationObserver(observeElements);
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+    };
+  }, []);
 
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Features />
-      <Services />
-      <About />
-      <Gallery />
-      <Testimonials />
-      <ContactForm />
-      <Footer />
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+        </Routes>
+        <Footer />
 
-      {/* Floating CTA for Mobile */}
-      <a href="tel:8076323675" className="floating-cta" aria-label="Call Now">
-        <i className="fa-solid fa-phone"></i>
-      </a>
-    </div>
+        {/* Floating CTA for Mobile */}
+        <a href="tel:8076323675" className="floating-cta" aria-label="Call Now">
+          <i className="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </Router>
   );
 }
 

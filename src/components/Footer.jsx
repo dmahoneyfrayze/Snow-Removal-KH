@@ -36,6 +36,11 @@ const Footer = () => {
                                 <span>Always Open<br />24/7 Response</span>
                             </li>
                         </ul>
+
+                        <div className="legal-links" style={{ marginTop: '2rem' }}>
+                            <p style={{ marginBottom: '0.5rem' }}><a href="/privacy-policy" style={{ opacity: 0.7, fontSize: '0.9rem' }}>Privacy Policy</a></p>
+                            <p><a href="/terms-of-service" style={{ opacity: 0.7, fontSize: '0.9rem' }}>Terms of Service</a></p>
+                        </div>
                     </div>
                 </div>
 
