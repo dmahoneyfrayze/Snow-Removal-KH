@@ -19,9 +19,7 @@ const Header = () => {
                     <span>KH Contracting</span>
                 </a>
 
-                <div className="logo">
-                    <i className="fa-regular fa-snowflake"></i> KH <span>Contracting</span>
-                </div>
+
 
                 <div className="mobile-menu-btn" onClick={toggleMenu}>
                     <i className={`fa-solid ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
