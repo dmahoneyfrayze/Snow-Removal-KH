@@ -21,7 +21,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="about-image fade-in" style={{ transitionDelay: '0.2s' }}>
-                        <img src="/about_section.png" alt="KH Contracting Team Truck" />
+                        <img src="/about_section.png" alt="KH Contracting Team Truck" width="600" height="400" style={{ width: '100%', height: 'auto' }} />
                         <div className="experience-badge" style={{
                             position: 'absolute',
                             bottom: '-20px',

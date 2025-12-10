@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container nav-container">
-                <a href="#" className="logo">
+                <a href="/" className="logo">
                     <img src="/logo.jpg" alt="KH Contracting" className="logo-img" style={{ height: '50px', borderRadius: '5px' }} />
                     <span>KH Contracting</span>
                 </a>
@@ -27,7 +27,6 @@ const Header = () => {
 
                 <nav>
                     <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                        <li><a href="/" onClick={closeMenu}>Home</a></li>
                         <li><a href="/residential-snow-removal" onClick={closeMenu}>Residential</a></li>
                         <li><a href="/commercial-snow-removal" onClick={closeMenu}>Commercial</a></li>
                         <li><a href="/services" onClick={closeMenu}>Other Services</a></li>

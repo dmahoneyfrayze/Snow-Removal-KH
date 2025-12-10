@@ -42,15 +42,19 @@ const CommercialSnow = () => {
                     </div>
                 </div>
 
+                <p className="text-center" style={{ marginBottom: '3rem', fontSize: '0.95rem' }}>
+                    <em>Need driveway clearing for your home? Visit our <a href="/residential-snow-removal" style={{ textDecoration: 'underline', color: 'var(--accent-color)' }}>Residential Services</a> page.</em>
+                </p>
+
                 <div className="image-grid" style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
                     gap: '1rem',
                     marginBottom: '4rem'
                 }}>
-                    <img src="/commercial_complete.png" alt="Commercial Lot Cleared" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
-                    <img src="/commercial_seasonal.png" alt="Commercial Snow Plowing" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
-                    <img src="/commercial_maintenance.png" alt="Lot Maintenance" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <img src="/commercial_complete.png" alt="Commercial Lot Cleared" width="400" height="300" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <img src="/commercial_seasonal.png" alt="Commercial Snow Plowing" width="400" height="300" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <img src="/commercial_maintenance.png" alt="Lot Maintenance" width="400" height="300" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
                 </div>
 
                 <div className="text-content" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>

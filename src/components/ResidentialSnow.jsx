@@ -40,9 +40,13 @@ const ResidentialSnow = () => {
                                 <li><i className="fa-solid fa-check"></i> <strong>Equipment:</strong> inverted snowblowers and plastic-cutting edges to protect your driveway.</li>
                             </ul>
 
+                            <p style={{ marginBottom: '2rem', fontSize: '0.9rem' }}>
+                                <em>Looking for business services? Check our <a href="/commercial-snow-removal" style={{ textDecoration: 'underline', color: 'var(--primary-color)' }}>Commercial Snow Management</a> page.</em>
+                            </p>
+
                             <div className="mini-gallery" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                                <img src="/residential_complete.png" alt="Cleared Driveway" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
-                                <img src="/residential_seasonal.png" alt="Snow Plowing" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
+                                <img src="/residential_complete.png" alt="Cleared Driveway" width="400" height="300" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
+                                <img src="/residential_seasonal.png" alt="Snow Plowing" width="400" height="300" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
                             </div>
                         </div>
                         <div className="calc-col">

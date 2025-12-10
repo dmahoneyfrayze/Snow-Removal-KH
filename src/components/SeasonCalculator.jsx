@@ -32,8 +32,9 @@ const SeasonCalculator = () => {
             </p>
 
             <div className="form-group">
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>Driveway Size</label>
+                <label htmlFor="drivewayType" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>Driveway Size</label>
                 <select
+                    id="drivewayType"
                     value={drivewayType}
                     onChange={(e) => setDrivewayType(e.target.value)}
                     style={{ width: '100%', padding: '0.8rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}
@@ -45,10 +46,11 @@ const SeasonCalculator = () => {
             </div>
 
             <div className="form-group" style={{ marginTop: '1.5rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>
+                <label htmlFor="visits" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>
                     Expected Clearing Visits <span style={{ color: 'var(--secondary-color)' }}>({visits})</span>
                 </label>
                 <input
+                    id="visits"
                     type="range"
                     min="5"
                     max="30"

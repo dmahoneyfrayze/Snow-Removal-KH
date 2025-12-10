@@ -21,7 +21,7 @@ const Gallery = () => {
                 <div className="gallery-grid">
                     {galleryImages.map((img, index) => (
                         <div className="gallery-item fade-in" key={index} style={{ transitionDelay: `${index * 0.1}s` }}>
-                            <img src={img.src} alt={img.alt} loading="lazy" />
+                            <img src={img.src} alt={img.alt} loading="lazy" width="400" height="300" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             <div className="overlay">
                                 <p>{img.alt}</p>
                             </div>
