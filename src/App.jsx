@@ -39,6 +39,11 @@ function App() {
       <Services />
       <About />
       <Footer />
+
+      {/* Floating CTA for Mobile */}
+      <a href="tel:8076323675" className="floating-cta" aria-label="Call Now">
+        <i className="fa-solid fa-phone"></i>
+      </a>
     </div>
   );
 }

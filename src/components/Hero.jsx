@@ -2,11 +2,14 @@ const Hero = () => {
     return (
         <section id="home" className="hero">
             <div className="container hero-content">
-                <h1>Reliable Snow Removal in Thunder Bay</h1>
-                <p>Keep your property safe and accessible this winter. Professional snow removal, sand relocation, and maintenance.</p>
-                <a href="tel:8076323675" className="btn btn-primary">
-                    <i className="fa-solid fa-phone"></i> Get Free Estimate
-                </a>
+                <h1>Don't Get Stuck This Winter.<br /><span className="text-secondary">Reliable Snow Removal in Thunder Bay</span></h1>
+                <p>24/7 Emergency Service. Residential & Commercial. We keep your property safe and accessible when the storm hits.</p>
+                <div className="hero-btns">
+                    <a href="tel:8076323675" className="btn btn-primary pulse-animation">
+                        <i className="fa-solid fa-phone"></i> Call For Free Estimate
+                    </a>
+                </div>
+                <p className="hero-trust"><i className="fa-solid fa-shield-halved"></i> Fully Insured & Professional Team</p>
             </div>
         </section>
     );
