@@ -30,7 +30,9 @@ const Header = () => {
                 <nav>
                     <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                         <li><a href="/" onClick={closeMenu}>Home</a></li>
-                        <li><a href="/services" onClick={closeMenu}>Services</a></li>
+                        <li><a href="/residential-snow-removal" onClick={closeMenu}>Residential</a></li>
+                        <li><a href="/commercial-snow-removal" onClick={closeMenu}>Commercial</a></li>
+                        <li><a href="/services" onClick={closeMenu}>Other Services</a></li>
                         <li><a href="/contact" onClick={closeMenu}>Contact</a></li>
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=61566857147759" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
