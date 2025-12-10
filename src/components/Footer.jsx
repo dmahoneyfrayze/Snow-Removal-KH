@@ -8,9 +8,13 @@ const Footer = () => {
                         <p style={{ opacity: 0.8, marginBottom: '1.5rem', lineHeight: '1.8' }}>
                             Professional snow removal and property maintenance services in Thunder Bay. Reliable, insured, and ready to help.
                         </p>
-                        <div className="social-links" style={{ marginBottom: '2rem' }}>
+                        <div className="social-links" style={{ marginBottom: '1.5rem' }}>
                             <a href="https://www.facebook.com/profile.php?id=61566857147759" target="_blank" rel="noreferrer" style={{ fontSize: '1.5rem', color: 'var(--secondary-color)' }}><i className="fa-brands fa-facebook"></i></a>
                         </div>
+                        <p style={{ fontSize: '0.9rem' }}>
+                            <a href="/careers" style={{ marginRight: '1rem', textDecoration: 'underline' }}>Careers</a>
+                            <a href="/blog" style={{ textDecoration: 'underline' }}>Blog</a>
+                        </p>
                     </div>
 
                     <div className="footer-contact">

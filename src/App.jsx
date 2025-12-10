@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
+import CareersPage from './components/CareersPage';
+import BlogPage from './components/BlogPage';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
@@ -53,6 +55,8 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/quote" element={<ContactPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
