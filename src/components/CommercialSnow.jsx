@@ -9,7 +9,7 @@ const CommercialSnow = () => {
     return (
         <>
             <div className="page-header" style={{
-                background: "linear-gradient(rgba(11, 29, 54, 0.9), rgba(11, 29, 54, 0.9)), url('/about_section.png') no-repeat center center/cover",
+                background: "linear-gradient(rgba(11, 29, 54, 0.9), rgba(11, 29, 54, 0.9)), url('/commercial_parking.png') no-repeat center center/cover",
                 color: 'white',
                 padding: '8rem 0 4rem',
                 textAlign: 'center'
@@ -40,6 +40,17 @@ const CommercialSnow = () => {
                         <h3>Heavy Equipment</h3>
                         <p>From skid steers to loaders, we have the capacity to handle large parking lots and snow piling.</p>
                     </div>
+                </div>
+
+                <div className="image-grid" style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                    gap: '1rem',
+                    marginBottom: '4rem'
+                }}>
+                    <img src="/commercial_complete.png" alt="Commercial Lot Cleared" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <img src="/commercial_seasonal.png" alt="Commercial Snow Plowing" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
+                    <img src="/commercial_maintenance.png" alt="Lot Maintenance" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '200px', objectFit: 'cover' }} />
                 </div>
 
                 <div className="text-content" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>

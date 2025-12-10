@@ -10,7 +10,7 @@ const ResidentialSnow = () => {
     return (
         <>
             <div className="page-header" style={{
-                background: "linear-gradient(rgba(11, 29, 54, 0.8), rgba(11, 29, 54, 0.8)), url('/hero_background.png') no-repeat center center/cover",
+                background: "linear-gradient(rgba(11, 29, 54, 0.8), rgba(11, 29, 54, 0.8)), url('/residential_driveway.png') no-repeat center center/cover",
                 color: 'white',
                 padding: '8rem 0 4rem',
                 textAlign: 'center'
@@ -33,12 +33,17 @@ const ResidentialSnow = () => {
                                 Winter in Thunder Bay is unpredictable. Our residential snow removal service ensures you never have to worry about digging your car out before work. We operate 24/7 during snow events, automatically visiting your property whenever accumulation exceeds 5cm.
                             </p>
                             <h3 style={{ fontSize: '1.3rem' }}>What's Included?</h3>
-                            <ul className="feature-list">
+                            <ul className="feature-list" style={{ marginBottom: '2rem' }}>
                                 <li><i className="fa-solid fa-check"></i> <strong>Trigger Depth:</strong> 5cm (2 inches)</li>
                                 <li><i className="fa-solid fa-check"></i> <strong>Return Visits:</strong> We come back to clear city plow ridges.</li>
                                 <li><i className="fa-solid fa-check"></i> <strong>Walkways:</strong> Available as an add-on service.</li>
                                 <li><i className="fa-solid fa-check"></i> <strong>Equipment:</strong> inverted snowblowers and plastic-cutting edges to protect your driveway.</li>
                             </ul>
+
+                            <div className="mini-gallery" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                <img src="/residential_complete.png" alt="Cleared Driveway" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
+                                <img src="/residential_seasonal.png" alt="Snow Plowing" style={{ borderRadius: 'var(--radius-md)', width: '100%', height: '150px', objectFit: 'cover' }} />
+                            </div>
                         </div>
                         <div className="calc-col">
                             <SeasonCalculator />
